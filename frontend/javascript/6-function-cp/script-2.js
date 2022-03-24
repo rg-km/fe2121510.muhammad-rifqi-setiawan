@@ -11,12 +11,26 @@
 
 function checkPalindrome(string) {
     // TODO: answer here
+    let result = true;
+
+    for (let i = 0; i < string.length / 2; i++) {
+        const leftPointer = string[i];
+        const rightPointer = string[string.length - i - 1]
+
+        // Check Codition 
+        // console.log('leftPointer', leftPointer);
+        // console.log('rightPointer', rightPointer);
+        if (leftPointer !== rightPointer) {
+            result =  false;
+
+        }
+    }
+    return result;
 }
 
 // masukan teks
-const string = prompt('Enter a string: ');
+// const string = prompt('Enter a string: ');
 
 // memanggil fungsi palindrom
-const value = checkPalindrome(string);
-
+const value = checkPalindrome('madam');
 console.log(value);
