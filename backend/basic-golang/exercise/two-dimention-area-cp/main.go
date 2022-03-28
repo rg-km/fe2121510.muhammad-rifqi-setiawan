@@ -35,6 +35,7 @@ import (
 // - (4) Luas Lingkaran adalah : 50.240000
 
 func main() {
+<<<<<<< HEAD
 	//beginanswer
 	var choice int = 0
 	var result float32
@@ -79,4 +80,7 @@ func main() {
 		fmt.Println("Invalid value")
 	}
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 }

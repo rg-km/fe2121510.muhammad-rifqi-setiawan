@@ -9,6 +9,7 @@ import "fmt"
 // Untuk menghitung bonus terdapat tiga aturan sebagai berikut:
 // Bonus untuk Manager adalah 3 * BaseSalary
 // Bonus untuk SeniorEngineer adalah 2 * BaseSalary
+<<<<<<< HEAD
 // Bonus untuk JuniorEngineer adalah 3 * BaseSalary
 
 //beginanswer
@@ -52,10 +53,20 @@ func TotalEmployeeBonus(employees []Employee) int {
 
 	return total
 	//endanswer
+=======
+// Bonus untuk JuniorEngineer adalah 1 * BaseSalary
+
+// TODO: answer here
+
+func TotalEmployeeBonus(employees []Employee) int {
+	// Hitunglah total bonus yang dikeluarkan dari list of Employee
+	// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 }
 
 func main() {
 	// Buatlah objek konkret untuk masing-masing objek dan panggil function TotalEmployeeBonus. Print total bonus untuk semua employee.
+<<<<<<< HEAD
 	//beginanswer
 	manager := Manager{
 		BaseSalary: 20000000,
@@ -70,4 +81,7 @@ func main() {
 	totalBonus := TotalEmployeeBonus([]Employee{manager, seniorEngineer, juniorEngineer})
 	fmt.Println(totalBonus)
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 }

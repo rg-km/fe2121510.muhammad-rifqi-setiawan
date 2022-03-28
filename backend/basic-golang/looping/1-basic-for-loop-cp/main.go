@@ -9,8 +9,12 @@ func main() {
 	// hint: gunakan len(data)
 	result := 0
 	for i := 0; i <= len(data); i++ {
+<<<<<<< HEAD
 		// beginanswer
 		result += data[i]
 		// endanswer
+=======
+		// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 	}
 }

@@ -16,7 +16,11 @@ func GetAge(data map[string]int, name string) (int, error) {
 	}
 
 	if data[name] < 0 {
+<<<<<<< HEAD
 		// Isilah baris ini dengan return 0 dan custom error yang telah dibuat
+=======
+		// Isilah baris ini dengan return 0 dan custom error yang telah dibuat dengan message error invalid data dan errCode 500
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 		// TODO: answer here
 	}
 

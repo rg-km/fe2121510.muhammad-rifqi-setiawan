@@ -25,6 +25,7 @@ func main() {
 	fmt.Printf("Masukkan nilai mahasiswa : ")
 	fmt.Scan(&point)
 
+<<<<<<< HEAD
 	//beginanswer
 	if point > 100 {
 		fmt.Printf("Nilai tidak boleh lebih dari 100")
@@ -42,5 +43,8 @@ func main() {
 		}
 	}
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 
 }

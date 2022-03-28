@@ -1,5 +1,6 @@
 # Hackerrank Exercise - Cases Study
 
+<<<<<<< HEAD
 <!-- beginanswer -->
 
 - Please watch the following Guide Video:
@@ -15,6 +16,9 @@ Untuk democode(practice) Lecturer langsung di Hackerrank mengingat case-study ny
 
 Untuk tugas ini tidak wajib di kumpulkan hanya dibahas di sesi Lecture, namun **dipastikan semua student dapat mengikuti practice dengan baik**, bila ada student yang bingung dan belum catch up usahakan Instructure dapat merangkulnya di sesi lecture.
 <!-- endanswer nop -->
+=======
+
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 
 
 ## Point of Lecturer
@@ -27,7 +31,11 @@ Untuk tugas ini tidak wajib di kumpulkan hanya dibahas di sesi Lecture, namun **
 ## Basic:
 - Problem 1: [Compare the Triplet Problem](compare-the-triplets/main.go)
 - Problem 2: [A Very Big Sum](very-big-sum/main.go)
+<<<<<<< HEAD
 - Problem 3: [Diagonal Difference](diagonal-differencer/main.go)
+=======
+- Problem 3: [Diagonal Difference](diagonal-difference/main.go)
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 - Problem 4: [Staircase](staircase/main.go)
 - Problem 5: [Mini-Max Sum](mini-max-sum/main.go)
 - Problem 6: [Birthday Cake Candles](birthday-cake-candles/main.go)

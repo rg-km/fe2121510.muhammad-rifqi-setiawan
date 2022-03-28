@@ -36,6 +36,7 @@ func main() {
 		Fabiansyah Raam   Lulus
 		Indra Kenz   Tidak Lulus
 	*/
+<<<<<<< HEAD
 	//beginanswer
 	for _, val := range mahasiswa {
 		if val["nilai"] == "A" {
@@ -49,4 +50,7 @@ func main() {
 		}
 	}
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 }

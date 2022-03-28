@@ -13,10 +13,14 @@ func main() {
 	slice := []string{"Marcus", "is", "known", "to", "be", "one", "of", "five", "greatest", "emperors", "of", "rome",
 		"Aurelius", "is", "also", "known", "to", "be", "a", "philosopher"}
 
+<<<<<<< HEAD
 	//beginanswer
 	var copySlice []string
 	copySlice = append(copySlice, slice[0:5]...)
 	copySlice = append(copySlice, slice[len(slice)-2:]...)
 	fmt.Println(copySlice)
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 }

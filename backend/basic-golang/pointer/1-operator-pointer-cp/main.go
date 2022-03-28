@@ -10,9 +10,13 @@ func main() {
 	age := 20
 	isMarried := true
 
+<<<<<<< HEAD
 	//beginanswer
 	fmt.Println(&name)
 	fmt.Println(&age)
 	fmt.Println(&isMarried)
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 }

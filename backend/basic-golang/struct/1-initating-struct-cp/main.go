@@ -4,6 +4,7 @@ import "fmt"
 
 //buat struct Rectangle dengan dua atribut yaitu Width dan Length
 
+<<<<<<< HEAD
 //beginanswer
 type Rectangle struct {
 	Width  int
@@ -11,6 +12,9 @@ type Rectangle struct {
 }
 
 //endanswer
+=======
+// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 
 func main() {
 	var r Rectangle

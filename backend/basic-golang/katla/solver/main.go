@@ -93,6 +93,7 @@ func calculateHints(guess, answer string) (hints []hint) {
 func main() {
 	dictionary := getDictionaryWords()
 
+<<<<<<< HEAD
 	//beginanswer
 	for len(dictionary) > 1 {
 		var guess, coloredHints string
@@ -143,4 +144,7 @@ func main() {
 		fmt.Println()
 	}
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 }

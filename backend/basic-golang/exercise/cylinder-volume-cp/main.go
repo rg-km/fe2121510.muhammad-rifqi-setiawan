@@ -17,6 +17,7 @@ import (
 // - Jadi volumenya adalah : 251.200012
 
 func main() {
+<<<<<<< HEAD
 	//beginanswer
 	var (
 		r      float32
@@ -31,4 +32,7 @@ func main() {
 	volume = pi * r * r * height
 	fmt.Printf("Jadi volumenya adalah : %f\n", volume)
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 }

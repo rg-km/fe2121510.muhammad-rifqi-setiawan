@@ -11,6 +11,7 @@ import (
 // Full Problem: https://www.hackerrank.com/challenges/diagonal-difference/problem
 
 func diagonalDifference(arr [][]int32) int32 {
+<<<<<<< HEAD
 	//beginanswer
 	var (
 		ans      int32 = 0
@@ -31,6 +32,9 @@ func diagonalDifference(arr [][]int32) int32 {
 
 	return ans
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 }
 
 func main() {

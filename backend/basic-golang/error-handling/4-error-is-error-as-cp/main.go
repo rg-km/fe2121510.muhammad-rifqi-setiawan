@@ -20,9 +20,13 @@ func GetAge(data map[string]int, name string) (int, error) {
 func IsEligibleToVaccine(data map[string]int, name string) (bool, error) {
 	age, err := GetAge(data, name)
 	if err != nil {
+<<<<<<< HEAD
 		//beginanswer
 		return false, fmt.Errorf("Error in IsEligibleToVaccine, error = %w", err)
 		//endanswer
+=======
+		// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 	}
 	if age < 15 {
 		return false, nil
@@ -40,10 +44,14 @@ func main() {
 	_, err := IsEligibleToVaccine(data, "Tony")
 	if err != nil {
 		// Cek apakah err merupakan jenis error ErrDataNotFound
+<<<<<<< HEAD
 		//startanswer
 		if errors.Is(err, ErrDataNotFound) {
 			fmt.Println("err adalah ErrDataNotFound")
 		}
 		//endanswer
+=======
+		// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 	}
 }

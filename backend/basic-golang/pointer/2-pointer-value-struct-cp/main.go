@@ -8,6 +8,7 @@ import "fmt"
 // SetWidthPointer(width int) untuk mengubah width dengan pointer receiver
 // SetWidthValue(width int) untuk mengubah width dengan value
 
+<<<<<<< HEAD
 //beginanswer
 type Rectangle struct {
 	Width  int
@@ -25,6 +26,9 @@ func (r Rectangle) SetWidthValue(width int) {
 }
 
 //endanswer
+=======
+// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 func main() {
 	var r Rectangle
 	r.Width = 10

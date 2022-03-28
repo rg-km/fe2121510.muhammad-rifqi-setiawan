@@ -12,6 +12,7 @@ import (
 
 func compareTriplets(a []int32, b []int32) []int32 {
 
+<<<<<<< HEAD
 	//beginanswer
 	arr := []int32{0, 0}
 	for i := range a {
@@ -23,6 +24,9 @@ func compareTriplets(a []int32, b []int32) []int32 {
 	}
 	return arr
 	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 }
 
 func main() {

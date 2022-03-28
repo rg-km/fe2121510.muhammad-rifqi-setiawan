@@ -22,6 +22,7 @@ import (
 
 func timeInWords(h int32, m int32) string {
 	// Write your code here
+<<<<<<< HEAD
 	//beginanswer
 	numberToWord := map[int32]string{
 		1:  "one",
@@ -78,6 +79,9 @@ func timeInWords(h int32, m int32) string {
 		}
 	}
 	//endanswer return ""
+=======
+	return "" // TODO: replace this
+>>>>>>> 873d29011f6fd4e0358a4df3f3e706f6b1f2272f
 }
 
 func main() {
