@@ -8,6 +8,18 @@
 
 function angkaPalindrome(num) {
   // TODO: answer here
+  let stringNum = num.toString();
+  let reverseString = '';
+
+  for (let i = 0; i < stringNum.length; i++) {
+    reverseString += stringNum[stringNum.length - 1 - i];
+}
+
+if (num != reverseString) {
+  return angkaPalindrome(num + 1);
+} else { 
+  return num; 
+  }
 }
 
 console.log(angkaPalindrome(10)); //11

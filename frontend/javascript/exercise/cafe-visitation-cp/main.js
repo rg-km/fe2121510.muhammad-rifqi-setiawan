@@ -23,12 +23,21 @@ function ruangCafe(name, age, money) {
   const latte = 300000;
 
   // TODO: answer here
+  if (name === "") {
+    return("Anda tidak boleh masuk!");
+  } else if (money < juice && money < latte) {
+    return("Uang tidak cukup. Anda harus pulang."); 
+  } else if (money >= juice && age < 17) {
+    return(`Anda bisa pesan juice. Sisa uang anda: ${money - juice}`);
+  } else if (money >= latte && age >= 17) {
+    return(`Anda bisa pesan latte. Sisa uang anda: ${money - latte}`);
+  }
 }
 
-console.log(ruangCafe('', 21, 2000000))
-console.log(ruangCafe('Dito', 16, 1000000))
-console.log(ruangCafe('Adit', 11, 9000))
-console.log(ruangCafe('Fauzan', 30, 999999))
-console.log(ruangCafe('Tegar', 27, 5000))
+console.log(ruangCafe('', 21, 2000000));
+console.log(ruangCafe('Dito', 16, 1000000));
+console.log(ruangCafe('Adit', 11, 9000));
+console.log(ruangCafe('Fauzan', 30, 999999));
+console.log(ruangCafe('Tegar', 27, 5000));
 
 module.exports = ruangCafe

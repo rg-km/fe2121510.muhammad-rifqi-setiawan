@@ -37,6 +37,46 @@
 
 function fixData(line) {
   // TODO: answer here
+   let konsonan = 0;
+   let vokal = 0;
+   let kataSandiBaru = '';
+   for (let i = 0; i < line.length; i++) {
+       if (line[i] === 'a' || line[i] === 'i' || line[i] === 'u' || line[i] === 'e' || line[i] === 'o') {
+          vokal++;
+       } else if (line[i] === '#') {
+          continue;
+       } else {
+          konsonan++;
+       }
+    }
+      if (konsonan > vokal) {
+         for (let j = 0; j < line.length; j++) {
+            if (line[j] === '#') {
+               kataSandiBaru += 'a';
+            } else {
+               kataSandiBaru += line[j];
+            }
+         }
+      } else if (vokal > konsonan) {
+         for (let k = 0; k < line.length; k++) {
+            if (line[k] === '#') {
+               kataSandiBaru += 'b';
+            } else {
+               kataSandiBaru += line[k];
+            }
+         }
+      } else if (vokal === konsonan) {
+         for (let l = 0; l < line.length; l++) {
+            if (line[l] === '#') {
+               kataSandiBaru += 'c';
+            } else {
+               kataSandiBaru += line[l];
+            }
+         }
+      } else {
+         kataSandiBaru = line;
+      }
+      return kataSandiBaru;
 }
 
 console.log(fixData('aoi#fdg#ue'))

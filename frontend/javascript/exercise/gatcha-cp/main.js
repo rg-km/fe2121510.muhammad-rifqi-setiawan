@@ -11,13 +11,53 @@
 
 // PSEUDOCODE:
 // TODO: answer here
-
+/*
+  FUNCTION gatcha(button) :
+    SWITCH
+      CASE 1
+        output : 'coba lagi ya'
+      ENDCASE
+      CASE 2
+        output : 'selamat kamu mendapatkan kupon sebanyak 5'
+      ENDCASE
+      CASE 3
+        output : 'selamat kamu mendapatkan kupon sebanyak 15'
+      ENDCASE
+      CASE 4
+        output : 'selamat kamu mendapatkan kupon sebanyak 50'
+      ENDCASE
+      CASE 5
+        output : 'selamat kamu mendapatkan kupon sebanyak 100'
+      ENDCASE
+      button = random number 1 - 5
+    ENDSWITCH
+  ENDFUNCTION
+*/
 function gatcha(button) {
   // TODO: answer here
+  switch (button) {
+    case 1:
+      console.log("coba lagi ya");
+      break;
+    case 2:
+      console.log("selamat kamu mendapatkan kupon sebanyak 5");
+      break;
+    case 3:
+      console.log("selamat kamu mendapatkan kupon sebanyak 15");
+      break;
+    case 4:
+      console.log("selamat kamu mendapatkan kupon sebanyak 50");
+      break;
+    case 5:
+      console.log("selamat kamu mendapatkan kupon sebanyak 100");
+      break;
+  }
+  return button;
 }
 
 // Create variable button here
 // TODO: answer here
+let button = Math.floor(Math.random() * 5);
 
 console.log(gatcha(button))
 
