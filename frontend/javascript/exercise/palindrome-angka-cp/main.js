@@ -22,7 +22,7 @@ if (num != reverseString) {
   }
 }
 
-console.log(angkaPalindrome(10)); //11
+console.log(angkaPalindrome(9)); //11
 console.log(angkaPalindrome(17)); //22
 console.log(angkaPalindrome(175)); //181
 

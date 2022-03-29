@@ -35,29 +35,23 @@
 */
 function gatcha(button) {
   // TODO: answer here
-  switch (button) {
+  switch (button){
     case 1:
-      console.log("coba lagi ya");
-      break;
+      return "coba lagi ya";
     case 2:
-      console.log("selamat kamu mendapatkan kupon sebanyak 5");
-      break;
+      return "selamat kamu mendapatkan kupon sebanyak 5";
     case 3:
-      console.log("selamat kamu mendapatkan kupon sebanyak 15");
-      break;
+      return "selamat kamu mendapatkan kupon sebanyak 15";
     case 4:
-      console.log("selamat kamu mendapatkan kupon sebanyak 50");
-      break;
+      return "selamat kamu mendapatkan kupon sebanyak 50";
     case 5:
-      console.log("selamat kamu mendapatkan kupon sebanyak 100");
-      break;
+      return "selamat kamu mendapatkan kupon sebanyak 100";
   }
-  return button;
 }
 
 // Create variable button here
 // TODO: answer here
-let button = Math.floor(Math.random() * 5);
+let button = Math.floor(Math.random() * 5 + 1);
 
 console.log(gatcha(button))
 

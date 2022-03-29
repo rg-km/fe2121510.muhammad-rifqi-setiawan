@@ -18,8 +18,11 @@ function konversiMenit(menit) {
   let jamString = jam.toString();
   let menitSisaString = menitSisa.toString();
   let result = '';
-
-  return result = jamString + ':' + menitSisaString;
+  if (menitSisa < 10) {
+    return result = jamString + ':0' + menitSisaString;
+  } else{
+    return result = jamString + ':' + menitSisaString;
+  }
 }
 
 console.log(konversiMenit(61));
