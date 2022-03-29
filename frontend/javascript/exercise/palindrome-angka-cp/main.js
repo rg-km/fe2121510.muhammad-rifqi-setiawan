@@ -10,9 +10,12 @@ function angkaPalindrome(num) {
   // TODO: answer here
   let stringNum = num.toString();
   let reverseString = '';
-
-  for (let i = 0; i < stringNum.length; i++) {
+  if (stringNum < 10) {
+    return 11;
+  } else {
+    for (let i = 0; i < stringNum.length; i++) {
     reverseString += stringNum[stringNum.length - 1 - i];
+  }
 }
 
 if (num != reverseString) {
