@@ -1,5 +1,5 @@
 const { expect, describe, it } = require('@jest/globals');
-const sum = require('./main');
+const { sum, multiply} = require('./main');
 
 describe('adds', () => {
     describe("when both numbers are positive", () => {
