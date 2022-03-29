@@ -8,7 +8,7 @@
 // [2, -1, 2, 3, -9] == 6, nilai maksimum bilangan berurutan adalah 6 (penjumlahan dari 2 + (-1) + 2 + 3), lebih besar dari penjumlahan urutan bilangan lainnya
 // [-1, -2, -3] == 0, jika semua bilangan negatif, kita bisa mengembalikan nilai 0 
 
-
+const prompt = require('prompt-sync')();
 let numInput = prompt("Masukan urutan bilangan dengan pemisah spasi:");
 let arr = numInput.split(" ").map(Number);
 
@@ -16,5 +16,15 @@ let arr = numInput.split(" ").map(Number);
 let maxSum = 0; 
 
 // TODO: answer here
+for (let i = 0; i < arr.length; i++) { 
+    let sum = 0; 
+    for (let j = i; j < arr.length; j++) { 
+        sum += arr[j]; 
+        if (sum > maxSum) {  
+            maxSum = sum;
+            // maxSum = Math.max(maxSum, sum);  <-- cara cepet jika tanpa menggunakan if
+        }
+    }
+}
 
 console.log(maxSum);
