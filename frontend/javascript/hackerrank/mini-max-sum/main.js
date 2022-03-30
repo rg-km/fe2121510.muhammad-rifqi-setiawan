@@ -13,6 +13,9 @@
 function miniMaxSum(arr) {
   // Write your code here
   // TODO: answer here
+  let min = 0;
+  let max = 0;
+  let sum = 0;
 }
 
 function main() {

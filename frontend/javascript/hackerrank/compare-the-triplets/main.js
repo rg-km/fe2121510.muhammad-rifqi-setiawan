@@ -17,11 +17,24 @@
 function compareTriplets(a, b) {
   // Write your code here
   // TODO: answer here
+  let result = [0, 0];
+  if (a.length !== b.length) {
+    throw new Error('Panjang array harus sama !');
+  } else {
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] > b[i]) {
+        result[0]++;
+      } else if (a[i] < b[i]) {
+        result[1]++;
+      }
+    }
+  }
+  return result;
 }
 function main() {
 
-  const a = [5, 6, 7] // override input
-  const b = [3, 6, 10] // override input
+  const a = [5, 7, 9] // override input
+  const b = [3, 6, 11] // override input
 
   const result = compareTriplets(a, b);
 

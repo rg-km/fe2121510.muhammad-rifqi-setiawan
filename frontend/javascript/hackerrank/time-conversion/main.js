@@ -15,6 +15,27 @@
 function timeConversion(s) {
   // Write your code here
   // TODO: answer here
+  let time = s.split(':');
+  let hour = time[0];
+  let minute = time[1];
+  let second = time[2];
+  let ampm = time[3];
+  let result = '';
+  if (ampm === 'AM') {
+    if (hour === '12') {
+      result = '00:' + minute + ':' + second.slice(0, 2);
+    } else {
+      result = hour + ':' + minute + ':' + second.slice(0, 2);
+    }
+  } else {
+    if (hour === '12') {
+      result = hour + ':' + minute + ':' + second.slice(0, 2);
+    } else {
+      let newHour = parseInt(hour) + 12;
+      result = newHour + ':' + minute + ':' + second.slice(0, 2);
+    }
+  }
+  return result;
 }
 
 function main() {

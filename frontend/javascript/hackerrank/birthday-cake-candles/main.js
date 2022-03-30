@@ -14,6 +14,20 @@
 function birthdayCakeCandles(candles) {
   // Write your code here
 	// TODO: answer here
+  let taller = candles[0] ;
+  let result = 0 ;
+  for (let i = 0; i<candles.length; i++){
+      if(candles[i]>taller){
+        taller = candles[i];
+    }
+  }
+    
+  for (let i = 0; i<candles.length; i++){
+      if(taller === candles[i]){
+        result++;
+      }
+  }
+    return result;
 }
 
 function main() {
