@@ -13,9 +13,17 @@
 function miniMaxSum(arr) {
   // Write your code here
   // TODO: answer here
-  let min = 0;
-  let max = 0;
-  let sum = 0;
+  let maxSum = 0,
+  minSum = 0;
+  arr.sort();
+
+  for (let i = 0; i < arr.length - 1; ++i) {
+    minSum += arr[i];
+  }
+  for (let i = 1; i < arr.length; ++i) {
+    maxSum += arr[i];
+  }
+  return `${minSum} ${maxSum}`
 }
 
 function main() {
