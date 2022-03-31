@@ -5,9 +5,28 @@
 // - multiply() mengalikan nilai yang disimpan.
 // - division() membagi nilai yang disimpan.
 
+const prompt = require('prompt-sync')();
+
 let calculator = {
   // Tulis kode di sini
   // TODO: answer here
+  read: function() {
+    this.a = +prompt("Masukan nilai a: ");
+    this.b = +prompt("Masukan nilai b: ");
+    console.log ("\n");
+  },
+  sum: function() {
+    return `Hasil dari a + b adalah : ${this.a + this.b}`;
+  },
+  substract: function() {
+    return `Hasil dari a - b adalah ${this.a - this.b}`;
+  },
+  multiply: function() {
+    return `Hasil dari a * b adalah ${this.a * this.b}`;
+  },
+  division: function() {
+    return `Hasil dari a / b adalah ${this.a / this.b}`;
+  }
 };
   
 calculator.read();

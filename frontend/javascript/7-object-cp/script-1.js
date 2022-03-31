@@ -19,3 +19,29 @@ let programming = {
 // 7. Menggunakan loop, console.log semua value dalam objek pemrograman.
 
 // TODO: answer here
+programming.languages.push("Go"); // 1
+programming.difficulty = 7; // 2
+delete programming.jokes; // 3
+programming.isFun = true; // 4
+
+// 5 
+console.log("Show all languages: ");
+for (let bahasa in programming) {
+    let arr = programming[bahasa]
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    } 
+} 
+
+console.log("\nshow all keys: ");
+// 6
+for (let item in programming) {
+    console.log(item);
+}
+
+console.log("\nshow all values: ");
+// 7
+for (let value in programming) {
+    console.log(programming[value]);
+}
+
