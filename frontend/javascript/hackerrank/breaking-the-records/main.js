@@ -15,6 +15,21 @@
 function breakingRecords(scores) {
   // Write your code here
   // TODO: answer here
+  let highScore = scores[0],
+    lowScore = scores[0],
+    highRecords = 0,
+    lowRecords = 0;
+  for (var i = 1; i < scores.length; i++) {
+    if (scores[i] > highScore) {
+      highScore = scores[i];
+      highRecords++;
+    }
+    if (scores[i] < lowScore) {
+      lowScore = scores[i];
+      lowRecords++;
+    }
+  }
+  return [highRecords, lowRecords];
 }
 
 function main() {
