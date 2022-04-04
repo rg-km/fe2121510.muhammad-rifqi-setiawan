@@ -9,9 +9,9 @@ Uncomment variable dibawah ini untuk mulai mengerjakan. dilarang mengganti nama 
 // let button = tombol untuk melakuan generate random quote
 
 let quote = document.getElementById('random-quote');
-let author = document.getElementById('author');
-let citation = document.getElementById('citation');
-let year = document.getElementById('year');
+let author = document.getElementsByClassName('author')[0];
+let citation = document.getElementsByClassName('citation')[0];
+let year = document.getElementsByClassName('year')[0];
 let button = document.getElementById('btn-random');
 
 
@@ -187,17 +187,7 @@ function getQuote() {
 	let randomQuote = quotes[randomNumber];
 	quote.innerHTML = randomQuote.quote;
 	author.innerHTML = randomQuote.author;
-	citation.innerHTML = randomQuote.citation;
-	year.innerHTML = randomQuote.year;
 
-	// if (citation === undefined) {
-	// 	citation.innerHTML = "";
-	// } else if (year === undefined) {
-	// 	year.innerHTML = "";
-	// } else {
-	// 	citation.innerHTML = randomQuote.citation;
-	// 	year.innerHTML = randomQuote.year;
-	// }
 	if (randomQuote.citation === undefined) {
 		citation.innerHTML = "";
 	} else {
@@ -209,6 +199,7 @@ function getQuote() {
 	} else {
 		year.innerHTML = randomQuote.year;
 	}
+	return randomQuote;
 }
 
 
