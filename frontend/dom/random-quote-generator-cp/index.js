@@ -187,7 +187,6 @@ function getQuote() {
 	let randomQuote = quotes[randomNumber];
 	quote.innerHTML = randomQuote.quote;
 	author.innerHTML = randomQuote.author;
-
 	if (randomQuote.citation === undefined) {
 		citation.innerHTML = "";
 	} else {
