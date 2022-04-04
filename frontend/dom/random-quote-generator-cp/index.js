@@ -185,20 +185,30 @@ function getQuote() {
 	// TODO: answer here
 	let randomNumber = Math.floor(Math.random() * (quotes.length));
 	let randomQuote = quotes[randomNumber];
-	let quote = randomQuote.quote;
-	let author = randomQuote.author;
-	let citation = randomQuote.citation;
-	let year = randomQuote.year;
-	let html = '';
-	html += '<p class="quote">' + quote + '</p>';
-	html += '<p class="author">' + author;
-	if (citation) {
-		html += '<span class="citation">' + citation + '</span>';
-	} else if (year) {
-		html += '<span class="year">' + year + '</span>';
+	quote.innerHTML = randomQuote.quote;
+	author.innerHTML = randomQuote.author;
+	citation.innerHTML = randomQuote.citation;
+	year.innerHTML = randomQuote.year;
+
+	// if (citation === undefined) {
+	// 	citation.innerHTML = "";
+	// } else if (year === undefined) {
+	// 	year.innerHTML = "";
+	// } else {
+	// 	citation.innerHTML = randomQuote.citation;
+	// 	year.innerHTML = randomQuote.year;
+	// }
+	if (randomQuote.citation === undefined) {
+		citation.innerHTML = "";
+	} else {
+		citation.innerHTML = randomQuote.citation;
 	}
-	html += '</p>';
-	document.getElementById('btn-random').innerHTML = html;
+
+	if (randomQuote.year === undefined) {
+		year.innerHTML = "";
+	} else {
+		year.innerHTML = randomQuote.year;
+	}
 }
 
 
