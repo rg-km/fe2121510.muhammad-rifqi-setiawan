@@ -8,6 +8,13 @@ Uncomment variable dibawah ini untuk mulai mengerjakan. dilarang mengganti nama 
 // let year = element untuk menampilkan year
 // let button = tombol untuk melakuan generate random quote
 
+let quote = document.getElementById('random-quote');
+let author = document.getElementById('author');
+let citation = document.getElementById('citation');
+let year = document.getElementById('year');
+let button = document.getElementById('btn-random');
+
+
 var quotes = [
 	{
 		quote: "Be who you are and say what you feel, because those who mind don't matter and those who matter don't mind.",
@@ -172,12 +179,30 @@ var quotes = [
 ];
 
 // TODO: answer here
+button.addEventListener("click", getQuote);
 
 function getQuote() {
 	// TODO: answer here
+	let randomNumber = Math.floor(Math.random() * (quotes.length));
+	let randomQuote = quotes[randomNumber];
+	let quote = randomQuote.quote;
+	let author = randomQuote.author;
+	let citation = randomQuote.citation;
+	let year = randomQuote.year;
+	let html = '';
+	html += '<p id="quote">' + quote + '</p>';
+	html += '<p id="author">' + author;
+	if (citation) {
+		html += '<span id="citation">' + citation + '</span>';
+	} else if (year) {
+		html += '<span id="year">' + year + '</span>';
+	}
+	html += '</p>';
+	document.getElementById('quote-box').innerHTML = html;
 }
 
 
 function displayQuote() {
 	// TODO: answer here
+	getQuote();
 }
