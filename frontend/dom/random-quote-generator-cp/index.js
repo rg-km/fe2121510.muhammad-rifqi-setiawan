@@ -190,15 +190,15 @@ function getQuote() {
 	let citation = randomQuote.citation;
 	let year = randomQuote.year;
 	let html = '';
-	html += '<p id="quote">' + quote + '</p>';
-	html += '<p id="author">' + author;
+	html += '<p class="quote">' + quote + '</p>';
+	html += '<p class="author">' + author;
 	if (citation) {
-		html += '<span id="citation">' + citation + '</span>';
+		html += '<span class="citation">' + citation + '</span>';
 	} else if (year) {
-		html += '<span id="year">' + year + '</span>';
+		html += '<span class="year">' + year + '</span>';
 	}
 	html += '</p>';
-	document.getElementById('quote-box').innerHTML = html;
+	document.getElementById('btn-random').innerHTML = html;
 }
 
 
