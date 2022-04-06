@@ -9,6 +9,8 @@
 // Input: 15
 // Output: "Masukan salah. Input bulan antara 1-12"
 
+const prompt = require('prompt-sync')();
+
 function getMonthName(monthNumber) {
     monthNumber = monthNumber - 1;
     let months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli',
@@ -22,5 +24,10 @@ function getMonthName(monthNumber) {
   
   // TODO: answer here
     let myMonth = parseInt(prompt("Masukan bilangan: "));
-    getMonthName(myMonth);
+    // getMonthName(myMonth);
   // TODO: answer here
+try {
+  getMonthName(myMonth);
+} catch (error) {
+  console.log('Error message: ' + error.message);
+}

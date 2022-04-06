@@ -10,15 +10,20 @@ function operator(operator) {
     let input = document.getElementById('input');
     if (operator == 'Del') {
         // TODO: answer here
+        input.value = input.value.slice(0, -1);
     } else if (operator == "AC") {
         // TODO: answer here
+        input.value = "";
     } else {
         // TODO: answer here
+        input.value += operator;
     }
 }
 
 //handle when = button is pressed. It renders the result into #input element
 function calculate() {
     // TODO: answer here
-    let equal = document.getElementById('calc');
+    let input = document.getElementById('input');
+    let result = eval(input.value);
+    input.value = result;
 }
