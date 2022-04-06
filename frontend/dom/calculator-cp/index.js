@@ -7,14 +7,14 @@ function number(number) {
 
 //handle when the Del button, AC button and other operators (+, /, -, x) are pressed. It renders the operator into #input element
 function operator(operator) {
-    // TODO: answer here
-    let del = document.getElementById('del');
-    let ac = document.getElementById('ac');
-    let div = document.getElementById('div');
-    let mult = document.getElementById('mult');
-    let min = document.getElementById('min');
-    let plus = document.getElementById('plus');
-    let dot = document.getElementById('dot');
+    let input = document.getElementById('input');
+    if (operator == 'Del') {
+        // TODO: answer here
+    } else if (operator == "AC") {
+        // TODO: answer here
+    } else {
+        // TODO: answer here
+    }
 }
 
 //handle when = button is pressed. It renders the result into #input element
