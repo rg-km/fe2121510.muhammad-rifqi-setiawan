@@ -27,3 +27,4 @@ class Cats extends Animals {
 }
 
 const jukut = new Cats("Clara", 33, "pelangi");
+console.log(jukut.whiskerColor);
