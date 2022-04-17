@@ -15,6 +15,14 @@
  */
 
 // TODO: answer here
+const multiplyByTwo = x => x * 2;
+multiplyByTwo(2); // 4
+
+const multiply = (x, y) => x * y;
+multiply(2, 3); // 6
+
+const returnTheTwo = () => 2;
+returnTheTwo(); // 2
 
 module.exports = {
   multiplyByTwo,

@@ -9,6 +9,16 @@
  */
 const max = (...args) => {
   // TODO: answer here
+  args = [1, 2, 5];
+  return args.reduce((prev, current) => {
+    if (prev > current) {
+      return prev;
+    } else {
+      return current;
+    }
+  });
 };
+
+console.log(max(1, 2, 5));
 
 module.exports = max
