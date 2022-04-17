@@ -10,7 +10,7 @@ class Thief extends Player {
     // TODO: answer here
     this.setGold(this.getGold() - 10);
     this.setStealChance(0.75);
-    if(this.getGold()<5){
+    if(this.getGold() < 10){
       return "Aku terlalu miskin";
     }
   }
@@ -59,12 +59,12 @@ class Trickster extends Player {
     const rng = this.randomizer();
     // TODO: answer here
     if(rng < this.getDistractionPurseChance()){
-      if(player.getGold()<10){
+      if(player.getGold() < 10){
         this.setGold(this.getGold() + player.getGold());
         player.setGold(0);
         this.setHasBeenRobbed(true);
         return "Berhasil mencuri balik semua uang lawan";
-      }else if (player.getGold()>10){
+      }else if (player.getGold() > 10){
         this.setGold(this.getGold() + 10);
         player.setGold(player.getGold() - 10);
         this.setHasBeenRobbed(true);
@@ -82,7 +82,7 @@ class Trickster extends Player {
       this.setGold(this.getGold() + 5);
       this.setHasBeenRobbed(true);
       return "Berhasil mencuri 5 gold"
-    } else if(player.getGold()<5){
+    } else if(player.getGold() < 5){
       return "Lawan terlalu miskin";
     }else{
       return "Gagal mencuri, coba lain kali";
