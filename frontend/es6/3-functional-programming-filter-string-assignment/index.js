@@ -8,6 +8,8 @@
 
 const filterString = (array) => {
   // TODO: answer here
+  return array.filter(item => typeof item === 'string');
 };
 
+console.log(filterString(['s', 'df', 'g', 9, 10, '1D1', 27]));
 module.exports = filterString
