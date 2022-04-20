@@ -33,6 +33,9 @@ function requestStarWarsPeopleById(peopleId, onReturn, onError) {
 
 function promiseStarWarsPeopleById(peopleId) {
   // TODO: answer here
+  return new Promise((resolve, reject) => {
+    requestStarWarsPeopleById(peopleId, resolve, reject);
+});
 }
 
 module.exports = {
