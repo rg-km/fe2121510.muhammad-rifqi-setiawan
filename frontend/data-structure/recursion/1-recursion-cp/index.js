@@ -33,4 +33,6 @@ function myPow(x, n) {
     }
 }
 
+console.log(myPow(2, 10)); // 1024
+
 module.exports = { myPow }
