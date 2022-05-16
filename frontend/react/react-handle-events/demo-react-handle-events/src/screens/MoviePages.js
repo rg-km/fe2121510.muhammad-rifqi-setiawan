@@ -12,8 +12,10 @@ const MoviePages = (props) => {
 
     const getMovieList = async() => {
         try {
+            // variable untuk menyimpan URL API
             const MOVIE_LIST_API_URL = `https://api.themoviedb.org/4/list/1?api_key=${API_KEY}&language=${userData.userLanguage}`;
             const getMovieList = await axios.get(MOVIE_LIST_API_URL);
+            // untuk menampilkan isi dari filmnya saja
             if (getMovieList.status == 200) {
                 const movieListResult = getMovieList.data.results;
                 setMovieList(movieListResult);

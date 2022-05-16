@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Button, Modal } from "react-bootstrap";
-
+ 
 import Constants from "../Constants";
 import './PodcastFormModal.css';
-
+ 
 const PodcastFormModal = (props) => {
   const {
     podcastList,
@@ -16,28 +16,75 @@ const PodcastFormModal = (props) => {
     podcastId,
   } = props;
   const [formValues, setFormValues] = useState({});
-
+ 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    // TODO: answer here
+    //beginanswer
+    setFormValues((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }));
+    //endanswer
   };
-
+ 
   const handleFormSubmit = async () => {
-    // TODO: answer here
+    //beginanswer
+    try {
+      if (formModalType == "ADD") {
+        const podcastRes = await axios.post(`${Constants.API_URL}`);
+        if (podcastRes.status == 200) {
+          setPodcastList([...podcastList, formValues]);
+        }
+      }
+      if (formModalType == "UPDATE") {
+        const podcastRes = await axios.put(
+          `${Constants.API_URL}/${podcastId}`,
+          formValues
+        );
+        if (podcastRes.status == 200) {
+          const updatedIndex = podcastList.findIndex(
+            (item) => item.id == podcastId
+          );
+          podcastList.splice(updatedIndex, 1, formValues)
+          setPodcastList([...podcastList]);
+        }
+      }
+      setShowFormModal(false);
+      setFormModalType("ADD");
+    } catch (err) {
+      console.log("error fetch podcast by id", err);
+    }
+    //endanswer
   };
-
+ 
   const onCloseModal = () => {
-    // TODO: answer here
+    //beginanswer
+    setShowFormModal(false);
+    setFormModalType("ADD");
+    //endanswer
   };
-
+ 
   const getPodcastById = async () => {
-    // TODO: answer here
+    //beginanswer
+    try {
+      const podcastData = await axios.get(`${Constants.API_URL}/${podcastId}`);
+      if (podcastData.status == 200) {
+        setFormValues(podcastData.data);
+      }
+    } catch (err) {
+      console.log("error fetch podcast by id", err);
+    }
+    //endanswer
   };
-
+ 
   useEffect(() => {
-    // TODO: answer here
+    //beginanswer
+    if (formModalType == "UPDATE") {
+      getPodcastById();
+    }
+    //endanswer
   }, [showFormModal]);
-
+ 
   return (
     <Modal show={showFormModal} onHide={onCloseModal}>
       <Modal.Header closeButton>
@@ -143,5 +190,5 @@ const PodcastFormModal = (props) => {
     </Modal>
   );
 };
-
+ 
 export default PodcastFormModal;
