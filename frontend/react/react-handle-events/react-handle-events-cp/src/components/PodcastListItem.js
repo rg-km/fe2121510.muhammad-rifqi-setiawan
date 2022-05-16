@@ -1,10 +1,14 @@
 import { Button } from 'react-bootstrap';
-
+ 
 import '../components/PodcastListItem.css';
-
+ 
 const PodcastListItem = ({ id, podcastItem, setFormModalType, setShowFormModal, setPodcastId }) => {
   const onClickUpdateBtn = () => {
-    // TODO: answer here
+    //beginanswer
+    setFormModalType('UPDATE')
+    setPodcastId(id)
+    setShowFormModal(true)
+    //endanswer
   }
   return (
     <div aria-label='podcast-list-item' className="list-item-container">
@@ -21,5 +25,5 @@ const PodcastListItem = ({ id, podcastItem, setFormModalType, setShowFormModal, 
     </div>
   );
 };
-
+ 
 export default PodcastListItem;
