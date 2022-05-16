@@ -30,20 +30,20 @@ const PodcastFormModal = (props) => {
   const handleFormSubmit = async () => {
     //beginanswer
     try {
-      if (formModalType == "ADD") {
+      if (formModalType === "ADD") {
         const podcastRes = await axios.post(`${Constants.API_URL}`);
-        if (podcastRes.status == 200) {
+        if (podcastRes.status === 200) {
           setPodcastList([...podcastList, formValues]);
         }
       }
-      if (formModalType == "UPDATE") {
+      if (formModalType ==="UPDATE") {
         const podcastRes = await axios.put(
           `${Constants.API_URL}/${podcastId}`,
           formValues
         );
-        if (podcastRes.status == 200) {
+        if (podcastRes.status === 200) {
           const updatedIndex = podcastList.findIndex(
-            (item) => item.id == podcastId
+            (item) => item.id === podcastId
           );
           podcastList.splice(updatedIndex, 1, formValues)
           setPodcastList([...podcastList]);
@@ -68,7 +68,7 @@ const PodcastFormModal = (props) => {
     //beginanswer
     try {
       const podcastData = await axios.get(`${Constants.API_URL}/${podcastId}`);
-      if (podcastData.status == 200) {
+      if (podcastData.status === 200) {
         setFormValues(podcastData.data);
       }
     } catch (err) {
@@ -79,7 +79,7 @@ const PodcastFormModal = (props) => {
  
   useEffect(() => {
     //beginanswer
-    if (formModalType == "UPDATE") {
+    if (formModalType === "UPDATE") {
       getPodcastById();
     }
     //endanswer

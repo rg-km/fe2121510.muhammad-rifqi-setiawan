@@ -14,11 +14,19 @@ const PodcastLists = () => {
   const [podcastId, setPodcastId] = useState(0)
 
   const getPodcastListData = async () => {
-    // TODO: answer here
+    //beginanswer
+    try {
+      const podcastData = await axios.get(Constants.API_URL);
+      setPodcastList(podcastData.data);
+    } catch (e) {
+      console.log("error get podcast list data ", e);
+    }
+    //endanswer
   };
 
   useEffect(() => {
     // TODO: answer here
+    getPodcastListData();
   }, []);
 
   return (
@@ -34,6 +42,14 @@ const PodcastLists = () => {
         </Button>
         {podcastList.map((item) => {
           // TODO: answer here
+          return <PodcastListItem 
+            key={item.id} 
+            id={item.id} 
+            setFormModalType={setFormModalType}
+            setPodcastId={setPodcastId}
+            setShowFormModal={setShowFormModal} 
+            podcastItem={item}
+          />
         })}
       </div>
       <PodcastFormModal
