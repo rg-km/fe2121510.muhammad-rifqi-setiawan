@@ -1,5 +1,7 @@
 // TODO: answer here
 import React from 'react';
+import { auth } from '../api/auth';
+import LikeDislikeButton from './LikeDislikeButton';
 
 export default function PostCard({ image, caption, username, userId, date }) {
   // TODO: answer here
@@ -19,12 +21,8 @@ export default function PostCard({ image, caption, username, userId, date }) {
           <p>{date}</p>
           </div>
           <div className="post-card-like-dislike">
-            <button aria-label="Like Button">Like</button>
-            <button aria-label="Dislike Button">Dislike</button>
-            <p aria-label="Like Count">0</p>
-            <p aria-label="Dislike Count">0</p>
+            <LikeDislikeButton />
           </div>
-          
     </div>
   )
 }
