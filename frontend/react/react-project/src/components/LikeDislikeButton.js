@@ -7,7 +7,8 @@ import { SessionContext } from "../context/SessionContext"
 
 export default function LikeDislikeButton({
     id, 
-    isLiked = false, 
+    image,
+    isLiked, 
     isDisliked = 0, 
     likeCount = 0, 
     dislikeCount}) {
@@ -20,29 +21,45 @@ export default function LikeDislikeButton({
     const [isLikedButton, setIsLiked] = useState(isLiked);
     const [isDislikedButton, setIsDisliked] = useState(isDisliked);
     
-    function handleLike() {
-        setLike(like + 1);
-        setIsLiked(true);
-        setIsDisliked(false);
-    }
-    function handleDislike() {
-        setDislike(dislike + 1);
-        setIsLiked(false);
-        setIsDisliked(true);
+    const handleLikeButton = () => {
+        if (isLikedButton && !isDislikedButton){
+            setIsLiked(false);
+            setLike(like - 1);
+        } else if (!isLikedButton && !isDislikedButton){
+            setIsLiked(true);
+            setLike(like + 1);
+        } else {
+            setIsLiked(true);
+            setIsDisliked(false);
+            setLike(like + 1);
+            setDislike(dislike - 1);
+        }
     }
 
+    const handleDislikeButton = () => {
+        if (!isLikedButton && isDislikedButton){
+            setIsDisliked(false);
+            setDislike(dislike - 1);
+        } else if (!isLikedButton && !isDislikedButton){
+            setIsDisliked(true);
+            setDislike(dislike + 1);
+        } else {
+            setIsDisliked(true);
+            setIsLiked(false);
+            setDislike(dislike + 1);
+            setLike(like - 1);
+        }
+    }
+    
     return (
         <div aria-label="Like & Dislike Button" className="LikeDislikeButton">
             <button aria-label="Like Button" onClick={() => {
-                handleLike();
+                handleLikeButton();                
             }}
             >Like</button>
             <button aria-label="Dislike Button" onClick={() => {
-                if (isLikedButton === false && isDislikedButton === false) {
-                    handleLike();
-                }else if (isLikedButton === true) {
-                    handleDislike();
-                }
+                handleDislikeButton();
+                
             }}
             >Dislike</button>
             <p aria-label="Like Count">{like}</p>
