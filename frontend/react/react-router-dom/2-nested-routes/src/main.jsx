@@ -11,7 +11,7 @@ import "./index.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
+    <Routes>
         {/* 1. localhost:3000 akan merender <App /> */}
         <Route path="/" element={<App />}>
           {/* 4. localhost:3000 akan merender <App /> dan <Outlet/> akan digantikan dengan <MainMenu /> */}
