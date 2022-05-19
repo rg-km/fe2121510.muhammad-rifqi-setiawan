@@ -36,7 +36,7 @@ export default function Navbar() {
       <a href="/" aria-label="App Title">Home</a>
       <img src={Image} aria-label="App Logo"/>
       
-      <div>
+      <div className="Authlogin">
         {isLogin ? (
           <h1 aria-label="Profile">Anda telah login {profileList.user.name}</h1>
           
