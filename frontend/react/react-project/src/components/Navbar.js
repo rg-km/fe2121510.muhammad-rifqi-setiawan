@@ -34,7 +34,7 @@ export default function Navbar() {
   return (
     <div aria-label="Navbar" className="Navbar">
       <a href="/" aria-label="App Title">Home</a>
-      <img src={Image} aria-label="App Logo"/>
+      {/* <img src={Image} aria-label="App Logo"/> */}
       
       <div className="Authlogin">
         {isLogin ? (

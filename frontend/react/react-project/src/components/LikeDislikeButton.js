@@ -2,6 +2,7 @@
 import React from "react"
 import { useEffect, useState } from "react"
 import { getSession, auth } from "../api/auth"
+import { API_URL } from "../api/config"
 import { useContext } from "react"
 import { SessionContext } from "../context/SessionContext"
 
@@ -13,9 +14,8 @@ export default function LikeDislikeButton({
     likeCount = 0, 
     dislikeCount}) {
     
-
-    // TODO: answer here
     
+    // TODO: answer here
     const [like, setLike] = useState(likeCount);
     const [dislike, setDislike] = useState(dislikeCount);
     const [isLikedButton, setIsLiked] = useState(isLiked);
