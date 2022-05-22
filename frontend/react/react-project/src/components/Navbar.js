@@ -34,11 +34,11 @@ export default function Navbar() {
   return (
     <div aria-label="Navbar" className="Navbar">
       <a href="/" aria-label="App Title">Home</a>
-      {/* <img src={Image} aria-label="App Logo"/> */}
+      <img src={Image} aria-label="App Logo"/>
       
       <div className="Authlogin">
         {isLogin ? (
-          <h1 aria-label="Profile">Anda telah login {profileList.user.name}</h1>
+          <h1 aria-label="Profile" onClick={auth}>Anda telah login {profileList.user.name}</h1>
           
         ) : (
           <button aria-label="Login" onClick={auth}>
