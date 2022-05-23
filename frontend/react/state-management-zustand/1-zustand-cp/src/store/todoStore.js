@@ -1,48 +1,21 @@
 import create from 'zustand';
-
-const useTodoStore = create((set) => ({
-// TODO: answer here
-    todos: [{
-        id: 1,
-        text: 'Learn React',
-        isDone: false,
-    }, {
-        id: 2,
-        text: 'Learn Zustand',
-        isDone: false,
-    }, {
-        id: 3,
-        text: 'Learn Chakra UI',
-        isDone: false,
-    }, { 
-    }],
-    addTodo: ({id, text, isDone}) => {
-        set(() => ({
-            todos: [...this.todos, {
-                id,
-                text,
-                isDone,
-            }],
-        }))
-    },
-    removeTodo: (id) => {
-        set(() => ({
-            todos: this.todos.filter((todo) => todo.id !== id),
-        }))
-    },
-    toggleTodo: (id) => {
-        set(() => ({
-            todos: this.todos.map((todo) => {
-                if (todo.id === id) {
-                    return {
-                        ...todo,
-                        isDone: !todo.isDone,
-                    }
-                }
-                return todo;
-            }),
-        }))
-    },
-}));
-
+ 
+const useTodoStore =
+  //beginanswer
+  create((set) => ({
+    todos: [],
+    addTodo: (todo) => set((state) => ({ todos: [todo, ...state.todos] })),
+    removeTodo: (selectedId) =>
+      set((state) => ({
+        todos: state.todos.filter((t) => t.id !== selectedId),
+      })),
+    toggleTodo: (selectedId) =>
+      set((state) => ({
+        todos: state.todos.map((t) =>
+          t.id === selectedId ? { ...t, isDone: !t.isDone } : t,
+        ),
+      })),
+  }))
+//endanswer
+ 
 export default useTodoStore;
