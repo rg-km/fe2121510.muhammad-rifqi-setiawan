@@ -122,3 +122,19 @@
   align-items: center;
   flex-direction: row;
 }
+
+.profile-list {
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.profile-picture{
+  width: 6vmin;
+  height: 6vmin;
+  border-radius: 50%;
+}

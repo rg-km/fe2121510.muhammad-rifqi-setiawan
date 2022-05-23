@@ -38,8 +38,10 @@ export default function Navbar() {
       
       <div className="Authlogin">
         {isLogin ? (
-          <h1 aria-label="Profile" onClick={auth}>Anda telah login {profileList.user.name}</h1>
-          
+          <div className="profile-list">
+            <h1 aria-label="Profile" onClick={auth}>Selamat Datang {profileList.user.name}</h1>
+            <img src={profileList.user.image} aria-label="Profile Picture" className="profile-picture"/>
+          </div>
         ) : (
           <button aria-label="Login" onClick={auth}>
           Login

@@ -28,8 +28,9 @@ export default function PostCard({
             <div className="namedate">
               <a aria-label="Post User Name" className="Username">
                 <p>id : {userId} | name : {username}</p>
+                <p aria-label="Post Date" className="Date">{date.slice(0,10)}</p>
               </a>
-              <p aria-label="Post Date" className="Date">{date}</p>
+              <p aria-label="Post Caption" className="Caption">{caption}</p>
             </div>
           </div>
           <div className="Box-inner2">
@@ -42,7 +43,6 @@ export default function PostCard({
               refetchListPost={refetchListPost}/>
           </div>
         </div>
-        <p aria-label="Post Caption" className="Caption">{caption}</p>
       </div>          
     </div>
   )
