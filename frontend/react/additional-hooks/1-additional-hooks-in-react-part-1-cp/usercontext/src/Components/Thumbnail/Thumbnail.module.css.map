@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAA;EAChB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,KAAK;EACb,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;CAKrB;;AATD,AAKI,oBALgB,CAKhB,GAAG,CAAA;EACC,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf;;AAIL,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EACpC,AAAA,oBAAoB,CAAA;IAChB,KAAK,EAAE,GAAG;GACb",
+    "sources": [
+        "Thumbnail.module.scss"
+    ],
+    "names": [],
+    "file": "Thumbnail.module.css"
+}

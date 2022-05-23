@@ -1,0 +1,42 @@
+.state-props-2 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+}
+
+.state-props-2 h3 {
+  text-align: center;
+}
+
+.state-props-2 .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.state-props-2 .box-container .each-box {
+  padding: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px black;
+  width: 32%;
+  border-style: solid;
+  border-width: 2px 2px;
+}
+
+.state-props-2 .box-container .each-box button:hover {
+  cursor: pointer;
+}
+
+.state-props-2 .box-container .each-box input {
+  text-align: center;
+}
+/*# sourceMappingURL=state-props-2.css.map */

@@ -29,6 +29,7 @@ const fetchListPost = async () => {
   return (
     <div aria-label="App" className="App">
       <Navbar />
+      <UploadForm />
       <div className="card-wrapper">
         {listPost.map((post) => (
           <PostCard
@@ -42,10 +43,10 @@ const fetchListPost = async () => {
           dislikeCount={post.dislikeCount} 
           id={post.id}
           refetchListPost={fetchListPost}
+          profile={post.author.profile}
           />
         ))}
         </div>
-      <UploadForm/>
       {/* <header className="App-header">
         <h1 aria-label="App Title">Instagram Clone</h1>
       </header> */}
