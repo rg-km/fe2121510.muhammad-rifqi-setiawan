@@ -4,8 +4,11 @@ import { HStack, Input, Button } from "@chakra-ui/react"
 
 export default function AddTodo() {
   // TODO: answer here
-
-  const [text, setText] = useState("")
+  const { addTodo } = useTodoStore();
+  const [id, setId] = useState(0);
+  const [text, setText] = useState("");
+  const [isDone, setIsDone] = useState(false);
+  
   const handleSubmit = (e) => {
     e.preventDefault()
     const newTodo = {

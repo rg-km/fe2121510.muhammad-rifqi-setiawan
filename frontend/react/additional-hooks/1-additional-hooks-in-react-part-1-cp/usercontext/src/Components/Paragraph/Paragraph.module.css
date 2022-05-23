@@ -1,0 +1,9 @@
+.paragraph-container {
+  margin-top: 5vh;
+}
+
+.paragraph-container p {
+  text-indent: 50px;
+  line-height: 25px;
+}
+/*# sourceMappingURL=Paragraph.module.css.map */

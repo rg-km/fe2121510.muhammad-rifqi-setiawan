@@ -3,7 +3,7 @@ import { HStack, Text, Button } from "@chakra-ui/react"
 
 export default function TodoItem({ id, text, isDone }) {
   // TODO: answer here
-
+  const { removeTodo, toggleTodo } = useTodoStore();
   return (
     <HStack justify="space-between" width="full">
       <Text aria-label="todo-text">

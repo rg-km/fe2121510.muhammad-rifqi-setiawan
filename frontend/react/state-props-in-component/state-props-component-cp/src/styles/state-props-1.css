@@ -1,0 +1,21 @@
+.state-props-1 {
+  margin: 20px;
+  width: 30%;
+}
+
+.state-props-1 .news-container .eachNews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+
+.state-props-1 .news-container .eachNews .description {
+  padding: 15px;
+}
+
+.state-props-1 .news-container .eachNews .description .text-grey {
+  margin-top: 15px;
+  color: #a89797;
+}
+/*# sourceMappingURL=state-props-1.css.map */
