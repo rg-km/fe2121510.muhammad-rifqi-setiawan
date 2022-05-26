@@ -63,6 +63,8 @@ export default function UploadForm() {
             name="caption"
             onChange={handleEventonChange}
             type="text"
+            color="white"
+            placeholder="Write a caption to your post"
           />
 
           <FormLabel mt={8}></FormLabel>
@@ -74,6 +76,7 @@ export default function UploadForm() {
             type="file"
             accept="image/png, image/jpg, image/gif"
             pt={1}
+            color="white"
           />
 
           <Button
@@ -87,28 +90,5 @@ export default function UploadForm() {
         </FormControl>
       </Container>
     </>
-
-    // <div className="Upload Form" aria-label="Upload Form">
-    //   <form onSubmit={postUploadForm}>
-    //     <input
-    //       type="text"
-    //       name="caption"
-    //       placeholder="caption"
-    //       aria-label="Caption Input"
-    //       onChange={handleEventonChange}
-    //     />
-    //     <input
-    //       type="file"
-    //       name="image"
-    //       placeholder="Image"
-    //       aria-label="Image Input"
-    //       accept="image/png, image/jpg, image/gif"
-    //       onChange={handleEventonChangeImage}
-    //     />
-    //     <button type="submit" aria-label="Submit Button">
-    //       Upload
-    //     </button>
-    //   </form>
-    // </div>
   );
 }

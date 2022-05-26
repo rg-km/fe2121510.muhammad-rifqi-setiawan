@@ -44,7 +44,7 @@ export default function Navbar() {
 
   // TODO: answer here
   return (
-    <HStack aria-label="Navbar" className="Navbar">
+    <HStack aria-label="Navbar" bgColor="#001b42">
       <Container as="nav" maxW="container.3xl" py={2}>
         <HStack>
           <HStack href="/" aria-label="App Title">

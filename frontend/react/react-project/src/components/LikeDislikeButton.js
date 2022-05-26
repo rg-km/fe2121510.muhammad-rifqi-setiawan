@@ -15,7 +15,6 @@ export default function LikeDislikeButton({
   isDisliked = 0,
   likeCount = 0,
   dislikeCount = 0,
-  refetchListPost,
 }) {
   // TODO: answer here
   const [like, setLike] = useState(likeCount);
@@ -90,7 +89,7 @@ export default function LikeDislikeButton({
         onClick={handleLikeButton}
         colorScheme="blue"
       >
-        Like:<Text aria-label="Like Count">{like}</Text>
+        Like: <Text aria-label="Like Count">{like}</Text>
       </Button>
 
       <Button
@@ -98,7 +97,7 @@ export default function LikeDislikeButton({
         onClick={handleDislikeButton}
         colorScheme="green"
       >
-        Dislike:<Text aria-label="Dislike Count">{dislike}</Text>
+        Dislike: <Text aria-label="Dislike Count">{dislike}</Text>
       </Button>
     </ButtonGroup>
   );
