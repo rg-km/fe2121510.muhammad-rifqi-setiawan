@@ -56,7 +56,7 @@ export default function UploadForm() {
           aria-label="Upload Form"
           onSubmit={postUploadForm}
         >
-          <FormLabel>Caption</FormLabel>
+          <FormLabel color="white">Caption</FormLabel>
           <Input
             aria-label="Caption Input"
             id="caption"
