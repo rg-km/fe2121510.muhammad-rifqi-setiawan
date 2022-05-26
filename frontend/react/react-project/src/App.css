@@ -37,8 +37,8 @@
   }
 }
 
-.Navbar{
-  background-color: #2b416d;
+.Navbar {
+  background-color: #001b42;
   height: 10vh;
   display: flex;
   column-gap: 15px;
@@ -47,76 +47,76 @@
   padding-left: 30px;
 }
 
-.Post{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: var(--chakra-sizes-full);
-    z-index: var(--chakra-zIndices-base);
-    gap: 1rem;
-    padding: 1rem;
+.Post {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: var(--chakra-sizes-full);
+  z-index: var(--chakra-zIndices-base);
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.Post-card{
+.Post-card {
   padding: 1rem;
   border-radius: var(--chakra-radii-xl);
   border-width: thin;
   width: 22rem;
 }
 
-.Post-image{
+.Post-image {
   object-fit: cover;
   width: 20rem;
   height: 20rem;
 }
 
-.Box{
+.Box {
   display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    flex-direction: row;
-    padding-block: 0.5rem;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-block: 0.5rem;
 }
 
-.Box-inner1{
+.Box-inner1 {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
   flex-direction: row;
 }
 
-.Box-inner2{
+.Box-inner2 {
   display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-.namedate{
+.namedate {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   gap: 0px;
 }
 
-.Date{
+.Date {
   font-size: 0.6rem;
   color: var(--chakra-colors-gray-600);
 }
 
-.Caption{
+.Caption {
   max-width: 20rem;
   word-break: normal;
 }
 
-.ForButton{
+.ForButton {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -124,16 +124,16 @@
 }
 
 .profile-list {
-    font-size: 12px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    column-gap: 40px;
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 40px;
 }
 
-.profile-picture{
+.profile-picture {
   width: 6vmin;
   height: 6vmin;
   border-radius: 50%;
