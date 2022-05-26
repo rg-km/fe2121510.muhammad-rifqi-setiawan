@@ -46,11 +46,9 @@ export default function LikeDislikeButton({
         setLike(like - 1);
         setIsLikedButton(false);
       }
-      // refetchListPost()
     } catch (error) {
       console.log(error);
     } finally {
-      // refetchListPost()
     }
   };
 

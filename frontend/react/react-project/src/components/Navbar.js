@@ -66,7 +66,7 @@ export default function Navbar() {
                   aria-label="Profile"
                   onClick={auth}
                 >
-                  Selamat Datang {profileList.user.name}
+                  {profileList.user.name}
                 </Heading>
                 <Avatar
                   name={profileList.user.name}

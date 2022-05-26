@@ -25,7 +25,6 @@ export default function PostCard({
   dislikeCount,
   isLiked,
   isDisliked,
-  refetchListPost,
 }) {
   // TODO: answer here
   return (
@@ -68,7 +67,6 @@ export default function PostCard({
             dislikeCount={dislikeCount}
             isLiked={isLiked}
             isDisliked={isDisliked}
-            refetchListPost={refetchListPost}
           />
 
           <Text aria-label="Post Date" fontSize="xs" opacity={0.8}>
