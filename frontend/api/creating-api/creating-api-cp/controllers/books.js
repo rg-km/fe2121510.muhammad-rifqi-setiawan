@@ -76,19 +76,13 @@ export const updateBook = (req, res) => {
   const bookItem = books.find((book) => book.id == req.params.id);
 
   if (bookItem) {
-    const updatedBook = {
-      ...bookItem,
-      ...req.body,
-    };
-
-    books = books.map((book) =>
-      book.id == req.params.id ? updatedBook : book
-    );
+    bookItem.title = req.body.title;
+    bookItem.author = req.body.author;
 
     res.status(200).json({
       success: true,
       message: `title has been updated to ${req.body.title}.author has been updated to ${req.body.author}`,
-      data: updatedBook,
+      data: bookItem,
     });
   } else {
     res.status(500).json({
